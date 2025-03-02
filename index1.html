@@ -13,7 +13,7 @@
     <script src="https://kit.fontawesome.com/af85941ed1.js" crossorigin="anonymous"></script>
 
 </head>
-<body class="bg-blue-50 pt-5 h-[100vh]">
+<body class="bg-blue-50 pt-5 h-[110vh]">
     <header>
         <nav class="flex justify-between container mx-auto bg-white mb-5 p-4 rounded-lg">
 
@@ -34,23 +34,28 @@
     <main>
         <div class="container mx-auto bg-white rounded-lg p-4 mb-4">
             <p class="font-bold mb-4">Question-1: What are the different ways to select an element in the DOM?</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, omnis, repellat sapiente saepe voluptatum voluptatem culpa nihil obcaecati magni aliquam vel, aspernatur deleniti. Possimus omnis deserunt soluta, assumenda animi perspiciatis.</p>
+            <p><span class="font-bold">Answer:</span> There are many ways to select an element in the DOM, such as <br> "getElementsByTagName", "getElementsByClssName", "getElementById", "querySelector" for single selection like id selector, "querySelectorAll" for all like class selector etc.</p>
         </div>
         <div class="container mx-auto bg-white rounded-lg p-4 mb-4">
             <p class="font-bold mb-4">Question-2: What is the difference between innerHTML, innerText, and textContent?</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, omnis, repellat sapiente saepe voluptatum voluptatem culpa nihil obcaecati magni aliquam vel, aspernatur deleniti. Possimus omnis deserunt soluta, assumenda animi perspiciatis.</p>
+            <p><span class="font-bold">Answer:</span> <br> ১. যখন আমার HTML ট্যাগসহ ভিতরের এলিমেন্ট দরকার হবে অথবা যখন কোন HTML ট্যাগ কোডের মধ্যে ইনসার্ট করতে হবে তখন innerHTML ব্যবহার করতে হবে। <br> 
+            ২. যখন HTML ট্যাগের মধ্য থেকে শুধু এলিমেন্ট দরকার হবে অথবা কোন HTML ট্যাগের মধ্যে এলিমেন্ট ইনসার্ট করতে হবে তখন innerText ব্যবহার করতে হবে। <br>
+            ৩. textContent ব্যবহার করা হয়, ভিতরে যা আছে সবকিছু ম্যানুপুলেশন করার জন্য। অর্থাৎ, textContent এর মাদ্ধমে যে শুধু Tag বা Element পাওয়া যায় তা নয়, এতে ভিতরে থাকা হিডেন এলিমেন্ট বা টেক্সট ও চাইলে পরিবর্তন, পরিমার্জন এবং নিয়ন্ত্রন করতে পারি। </p>
         </div>
         <div class="container mx-auto bg-white rounded-lg p-4 mb-4">
             <p class="font-bold mb-4">Question-3: What is event delegation in DOM?</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, omnis, repellat sapiente saepe voluptatum voluptatem culpa nihil obcaecati magni aliquam vel, aspernatur deleniti. Possimus omnis deserunt soluta, assumenda animi perspiciatis.</p>
+            <p><span class="font-bold">Answer:</span> এখানে event delegation বলতে আমি যা বুঝি তা হলো, অনেকগুলো আলাদা আলাদা event listener না ধরে parent node-এ একটা listener add করে অনেকগুলো child কে কন্ট্রোল করা। I have to learn more about this topic, আমার নলেজ এই টপিকের উপরে খুব গভীর নয়।</p>
         </div>
         <div class="container mx-auto bg-white rounded-lg p-4 mb-4">
             <p class="font-bold mb-4">Question-4: What is event bubbling in the DOM?</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, omnis, repellat sapiente saepe voluptatum voluptatem culpa nihil obcaecati magni aliquam vel, aspernatur deleniti. Possimus omnis deserunt soluta, assumenda animi perspiciatis.</p>
+            <p><span class="font-bold">Answer:</span> event bubbling বলতে বুঝি, child element-এ ঘটা ইভেন্ট parent elements-এর দিকে ছড়িয়ে পরা কে। অর্থাৎ, চাইল্ডে একটা ক্লিক বা যেকোনো ইভেন্ট ঘটাইলাম প্রথমে সেটা তার প্যারেন্ট দিকে যাবে তারপর তার প্যারেন্টে তারপর তার প্যারেন্টে এভাবে একদম HTML এবং সবশেষে document এ। আমি জানি ভালভাবে বুঝাতে পারিনি, আমি যত দ্রুত সম্ভব আমার ল্যাকিংস গুলো পুরন করে ফেলব।</p>
         </div>
         <div class="container mx-auto bg-white rounded-lg p-4">
             <p class="font-bold mb-4">Question-5: How do you create, add, and remove elements using JavaScript?</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, omnis, repellat sapiente saepe voluptatum voluptatem culpa nihil obcaecati magni aliquam vel, aspernatur deleniti. Possimus omnis deserunt soluta, assumenda animi perspiciatis.</p>
+            <p><span class="font-bold">Answer:</span><br> 
+                To create any element - "document.createElement()" <br>
+                To add any element - ".appendChild()" or ".append()" <br>
+                To remove any element - ".removeChild()" or ".remove()"</p>
         </div>
     </main>
 

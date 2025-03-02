@@ -45,7 +45,7 @@ completeBtn.forEach(function(button){
 let p = document.createElement("p");
 
 let parentComplete = button.closest('.parent-complete').querySelector(".title").innerText;
-p.innerText = `You have completed the ${parentComplete}`
+p.innerText = `You have completed the ${parentComplete} at 03:13 pm`
 history.appendChild(p)
 
 let clearHistory = document.querySelector(".clear-history");
