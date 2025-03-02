@@ -43,9 +43,10 @@ completeBtn.forEach(function(button){
             alert("Congratulations! You have completed all the modules.")
         }
 let p = document.createElement("p");
+p.classList.add("font-bold", "mt-5");
 
 let parentComplete = button.closest('.parent-complete').querySelector(".title").innerText;
-p.innerText = `You have completed the ${parentComplete} at 03:13 pm`
+p.innerText = `You have completed the ${parentComplete} ${time}` 
 history.appendChild(p)
 
 let clearHistory = document.querySelector(".clear-history");
@@ -67,6 +68,5 @@ backBtn.addEventListener("click", function () {
     console.log("hi")
 })
 }
-// completeBtn.addEventListener('click', function () {
-//     console.log('hi')
-// })
+
+document.querySelector(".calendar-date").innerText = date;
